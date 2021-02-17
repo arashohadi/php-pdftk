@@ -210,7 +210,7 @@ class Command extends BaseCommand
     {
         // output must be first option after operation
         if ($filename !== null) {
-            $this->addArg('output', $filename, true);
+            $this->addArg('output', $filename, false);
         }
         foreach ($this->_options as $option) {
             if (is_array($option)) {
