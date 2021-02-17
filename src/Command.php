@@ -109,7 +109,7 @@ class Command extends BaseCommand
     {
         $this->checkExecutionStatus();
         $this->_operationArgument = $value;
-        $this->_escapeOperationArgument = $escape;
+        $this->_escapeOperationArgument = false;
         return $this;
     }
 
